@@ -1,2 +1,7 @@
-pngout
+# Aptfile
 oxipng
+optipng
+pngcrush
+# Commented out pngout
+# pngout
+# Add other tools if needed
