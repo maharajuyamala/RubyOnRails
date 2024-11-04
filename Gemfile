@@ -6,7 +6,8 @@ gem "turbo-rails"
 ruby '3.3.5'
 # Require json for multi_json
 gem "json"
-
+gem "image_optim", "~> 0.25"
+gem "image_optim_pack", "= 0.2.3"
 # Use postgres as the database
 gem 'pg', '~> 1.5.0'
 
