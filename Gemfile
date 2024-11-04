@@ -2,6 +2,8 @@ source "https://rubygems.org"
 
 # Require rails
 gem "rails", "~> 7.0"
+gem 'devise'
+
 gem "turbo-rails"
 ruby '3.3.5'
 # Require json for multi_json
