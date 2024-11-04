@@ -279,6 +279,8 @@ GEM
       faraday (>= 0.8)
     faraday-net_http (3.3.0)
       net-http
+    faraday-retry (2.2.1)
+      faraday (~> 2.0)
     ffi (1.17.0-aarch64-linux-gnu)
     ffi (1.17.0-aarch64-linux-musl)
     ffi (1.17.0-arm-linux-gnu)
@@ -298,8 +300,6 @@ GEM
     frozen_record (0.27.4)
       activemodel
     fspath (3.1.2)
-    gd2-ffij (0.4.0)
-      ffi (>= 1.0.0)
     git (1.19.1)
       addressable (~> 2.8)
       rchardet (~> 1.8)
@@ -763,10 +763,10 @@ DEPENDENCIES
   erb_lint
   factory_bot_rails
   faraday
+  faraday-retry
   ffi-libarchive
   file_exists
   frozen_record
-  gd2-ffij (>= 0.4.0)
   htmlentities
   http_accept_language (~> 2.1.1)
   i18n-js (~> 3.9.2)
@@ -803,7 +803,7 @@ DEPENDENCIES
   quad_tile (~> 1.0.1)
   rack-cors
   rack-uri_sanitizer
-  rails (~> 7.2.0)
+  rails (~> 7.0)
   rails-controller-testing
   rails-i18n (~> 7.0.0)
   rails_param

@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Require rails
-gem "rails", "~> 7.2.0"
+gem "rails", "~> 7.0"
 gem "turbo-rails"
 
 # Require json for multi_json
@@ -106,6 +106,8 @@ gem "sanitize"
 # Load faraday for mockable HTTP client
 gem "faraday"
 
+gem 'faraday-retry'
+
 # Load maxminddb for querying Maxmind GeoIP database
 gem "maxminddb"
 
@@ -126,7 +128,7 @@ gem "logstasher"
 # Used to generate images for traces
 gem "bzip2-ffi"
 gem "ffi-libarchive"
-gem "gd2-ffij", ">= 0.4.0"
+# gem "gd2-ffij", ">= 0.4.0"
 gem "marcel"
 
 # Used for browser detection
