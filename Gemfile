@@ -95,7 +95,7 @@ gem "kramdown"
 
 # For status transitions of Issues
 gem "aasm"
-
+gem "nodejs"
 # Load libxml support for XML parsing and generation
 gem "libxml-ruby", ">= 2.0.5", :require => "libxml"
 
