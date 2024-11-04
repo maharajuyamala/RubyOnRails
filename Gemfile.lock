@@ -97,6 +97,13 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
+    coffee-rails (4.2.2)
+      coffee-script (>= 2.2.0)
+      railties (>= 4.0.0)
+    coffee-script (2.4.1)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.12.2)
     concurrent-ruby (1.3.4)
     connection_pool (2.4.1)
     crass (1.0.6)
@@ -116,6 +123,17 @@ GEM
     erubi (1.13.0)
     et-orbi (1.2.11)
       tzinfo
+    execjs (2.10.0)
+    ffi (1.17.0-aarch64-linux-gnu)
+    ffi (1.17.0-aarch64-linux-musl)
+    ffi (1.17.0-arm-linux-gnu)
+    ffi (1.17.0-arm-linux-musl)
+    ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86-linux-gnu)
+    ffi (1.17.0-x86-linux-musl)
+    ffi (1.17.0-x86_64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
+    ffi (1.17.0-x86_64-linux-musl)
     fugit (1.11.1)
       et-orbi (~> 1, >= 1.2.11)
       raabro (~> 1.4)
@@ -287,6 +305,16 @@ GEM
       rubocop-rails
     ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
+    sass-rails (6.0.0)
+      sassc-rails (~> 2.1, >= 2.1.1)
+    sassc (2.4.0)
+      ffi (~> 1.9)
+    sassc-rails (2.1.2)
+      railties (>= 4.0.0)
+      sassc (>= 2.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     securerandom (0.3.1)
     selenium-webdriver (4.26.0)
       base64 (~> 0.2)
@@ -315,6 +343,13 @@ GEM
       fugit (~> 1.11.0)
       railties (>= 7.1)
       thor (~> 1.3.1)
+    sprockets (4.2.1)
+      concurrent-ruby (~> 1.0)
+      rack (>= 2.2.4, < 4)
+    sprockets-rails (3.5.2)
+      actionpack (>= 6.1)
+      activesupport (>= 6.1)
+      sprockets (>= 3.0.0)
     sqlite3 (2.2.0-aarch64-linux-gnu)
     sqlite3 (2.2.0-aarch64-linux-musl)
     sqlite3 (2.2.0-arm-linux-gnu)
@@ -341,12 +376,15 @@ GEM
     thruster (0.1.8-arm64-darwin)
     thruster (0.1.8-x86_64-darwin)
     thruster (0.1.8-x86_64-linux)
+    tilt (2.4.0)
     timeout (0.4.1)
     turbo-rails (2.0.11)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    uglifier (4.2.1)
+      execjs (>= 0.3.0, < 3)
     unicode-display_width (2.6.0)
     uri (0.13.1)
     useragent (0.16.10)
@@ -385,6 +423,7 @@ DEPENDENCIES
   bootsnap
   brakeman
   capybara
+  coffee-rails (~> 4.2.2)
   debug
   devise
   importmap-rails
@@ -395,6 +434,7 @@ DEPENDENCIES
   pundit
   rails (~> 8.0.0.rc2)
   rubocop-rails-omakase
+  sass-rails (>= 6)
   selenium-webdriver
   sidekiq
   solid_cable
@@ -406,6 +446,7 @@ DEPENDENCIES
   thruster
   turbo-rails
   tzinfo-data
+  uglifier (>= 1.3.0)
   web-console
 
 RUBY VERSION
