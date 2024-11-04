@@ -1,6 +1,7 @@
 {
-  "engines": {
-    "node": "20.9.0",
-    "yarn": "1.22.19"
+  "name": "your-app-name",
+  "version": "1.0.0",
+  "dependencies": {
+    "svgo": "^2.8.0"
   }
 }
