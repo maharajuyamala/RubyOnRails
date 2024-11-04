@@ -1,13 +1,15 @@
-ImageOptim.configure do |config|
-  config.pngcrush = false
-  config.pngout = false
-  config.advpng = false
-  config.optipng = false
-  config.pngquant = false
-  config.oxipng = false
-  config.jhead = false
-  config.jpegoptim = false
-  config.jpegtran = false
-  config.gifsicle = false
-  config.svgo = false
-end
+# config/initializers/image_optim.rb
+require 'image_optim'
+
+ImageOptim.new(
+  pngcrush: false,
+  pngout: false,
+  advpng: false,
+  optipng: false,
+  pngquant: false,
+  oxipng: false,
+  jhead: false,
+  jpegoptim: false,
+  gifsicle: false,
+  svgo: false
+)
