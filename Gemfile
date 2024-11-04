@@ -3,7 +3,7 @@ source "https://rubygems.org"
 # Require rails
 gem "rails", "~> 7.0"
 gem "turbo-rails"
-
+ruby '3.3.5'
 # Require json for multi_json
 gem "json"
 
@@ -95,7 +95,6 @@ gem "kramdown"
 
 # For status transitions of Issues
 gem "aasm"
-gem "nodejs"
 # Load libxml support for XML parsing and generation
 gem "libxml-ruby", ">= 2.0.5", :require => "libxml"
 
