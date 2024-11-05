@@ -1,7 +1,6 @@
 # Aptfile
-oxipng
 optipng
 pngcrush
-# Commented out pngout
-# pngout
-# Add other tools if needed
+pngquant
+# Comment out oxipng if not available
+# oxipng
